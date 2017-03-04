@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//rota para o exame
+Route::get('/exames','ExamesController@index');
+
+// rota para medicos
+Route::get('/medicos','MedicosController@index');
+//Route::get('/exames',function{
+//    return view('exames.index');
+//});
