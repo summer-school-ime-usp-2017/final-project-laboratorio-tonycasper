@@ -15,19 +15,31 @@
 
           <ul class="list-group">
           <h3>Menu:</h3>
+          <table>
+          <tr>
+            <td style="padding:10px;">
             <li>
                <a href="/pacientes">Pacientes</a>
             </li>
-              <li>
+            </td style="padding:10px;">
+            <td style="padding:10px;">          
+             <li>
                <a href="/exames">Exames</a>
             </li>
-              <li>
+            </td style="padding:10px;">
+            <td style="padding:10px;">        
+            <li>
                <a href="/medicos">Medicos</a>
-            </li>
-              <li>
+            </li>           
+            </td style="padding:10px;">
+            <td style="padding:10px;">
+             <li>
                <a href="/pedidos">Pedidos</a>
             </li>
+            </td style="padding:10px;">
+          </tr>
         </ul>
+        </table>
 
         </div>
       </div>

@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 //Rota para exame/1 ex
-Route::get('/exames/{exames}','ExamesController@index');
+Route::get('/exames/{exame}','ExamesController@show');
 
 //rota para o exame
 Route::get('/exames','ExamesController@index');

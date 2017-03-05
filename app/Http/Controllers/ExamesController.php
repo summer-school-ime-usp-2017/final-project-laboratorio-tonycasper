@@ -3,22 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Exames;
 
 class ExamesController extends Controller
 {
 
-        private $exames = array(
-            'um exame','doies','mais um'
-        );
-        
         public function index()
         {
-            $exames = $this->exames;
+            $exames = exames::all();
             return view('exames.index',compact('exames'));
         }
 
-        public function show($index){
-            $exame = $this->exames[$index];
+        public function show(Exames $exame){
+
             return view('exames.show',compact('exame'));
         }
         

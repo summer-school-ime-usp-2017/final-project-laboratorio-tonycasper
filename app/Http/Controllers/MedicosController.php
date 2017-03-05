@@ -3,18 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Medicos;
 
 class MedicosController extends Controller
 {
-
-    private $medicos = array(
-        'Andre', 'Daniel',
-        'Albertinho', 'Jonastahanson'
-      );
-
      public function index()
     {
-      $medicos = $this->medicos;
+      $medicos = medicos::all();
       
       return view('medicos.index', compact('medicos'));
     }
