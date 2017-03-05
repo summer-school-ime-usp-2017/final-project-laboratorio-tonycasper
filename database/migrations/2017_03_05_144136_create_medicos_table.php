@@ -15,6 +15,9 @@ class CreateMedicosTable extends Migration
     {
         Schema::create('medicos', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nome', 100);
+            $table->integer('crm');
+            $table->string('email', 200);
             $table->timestamps();
         });
     }
@@ -29,3 +32,4 @@ class CreateMedicosTable extends Migration
         Schema::dropIfExists('medicos');
     }
 }
+
