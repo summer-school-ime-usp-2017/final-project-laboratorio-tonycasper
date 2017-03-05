@@ -13,12 +13,12 @@ class PedidosController extends Controller
         
         public function index()
         {
-            $exames = $this->exames;
+            $pedidos = $this->pedidos;
             return view('pedidos.index',compact('pedidos'));
         }
 
         public function show($index){
-            $exame = $this->exames[$index];
+            $pedido = $this->pedidos[$index];
             return view('pedidos.show',compact('pedido'));
         }
 }

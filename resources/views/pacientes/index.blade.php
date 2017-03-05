@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Cursos</title>
+    <title>Pacientes</title>
     <link rel="stylesheet" type="text/css" href="/css/app.css" />
   </head>
   <body>
@@ -11,12 +11,12 @@
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
 
-          <h1>Exames</h1>
+          <h1>Pacientes</h1>
 
           <ul class="list-group">
-            @foreach ($exames as $exame)
+            @foreach ($pacientes as $paciente)
                     <li class="list-group-item">
-                        <a href="/exames/{{ $loop->index }}">{{ $exame }}</a>
+                        <a href="/pacientes/{{ $loop->index }}">{{ $paciente }}</a>
                     </li>
             @endforeach
           </ul>
