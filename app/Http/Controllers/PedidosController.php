@@ -4,22 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ExamesController extends Controller
+class PedidosController extends Controller
 {
-
-        private $exames = array(
-            'um exame','doies','mais um'
+    
+        private $pedidos = array(
+            'um pedido','doies','mais um = 3'
         );
         
         public function index()
         {
             $exames = $this->exames;
-            return view('exames.index',compact('exames'));
+            return view('pedidos.index',compact('pedidos'));
         }
 
         public function show($index){
             $exame = $this->exames[$index];
-            return view('exames.show',compact('exame'));
+            return view('pedidos.show',compact('pedido'));
         }
-        
-    }
+}

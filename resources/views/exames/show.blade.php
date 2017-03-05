@@ -1,22 +1,20 @@
-@extends('layout')
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exames</title>
+    <link rel="stylesheet" type="text/css" href="/css/app.css" />
+  </head>
+  <body>
+    <div class="container">
 
-@section('title', 'Detalhes da Exame')
-
-@section('page-header-content', 'Detalhes do Exame')
-
-@section('content')
       <div class="row">
-        <div class="col-md-6">
-          <div class="panel panel-primary">
-
-            <div class="panel-heading"><strong>Exame:</strong></div>
-
-            <ul class="list-group">
-              <li class="list-group-item">{{ $exame->id }}</li>
-              <li class="list-group-item">{{ $exame->nome }}</li>
-              <li class="list-group-item">{{ $exame->metodo }}</li>
-            </ul>
+          <div class="col-md-6 col-md-offset-3">
+            <h1>{{ $exame[$index] }}</h1>
           </div>
-        </div>
       </div>
-@endsection
+    </div>
+
+    <script type="text/javascript" src="/js/app.js">
+  </body>
+</html>

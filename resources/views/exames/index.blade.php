@@ -15,7 +15,9 @@
 
           <ul class="list-group">
             @foreach ($exames as $exame)
-              <li class="list-group-item">{{ $exame }}</li>
+                    <li class="list-group-item">
+                        <a href="/exames/{{ $loop->index }}">{{ $exame }}</a>
+                    </li>
             @endforeach
           </ul>
 
