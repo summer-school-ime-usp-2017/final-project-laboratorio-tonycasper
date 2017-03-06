@@ -3,21 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Pacientes;
 
 class PacientesController extends Controller
 {   
-        private $pacientes = array(
-            'um pedido','doies','mais um = 3'
-        );
         
         public function index()
         {
-            $pacientes = $this->pacientes;
+            $pacientes = pacientes::all();
+
             return view('pacientes.index',compact('pacientes'));
         }
 
-        public function show($index){
-            $paciente = $this->pacientes[$index];
+        public function show(Pacientes $paciente){
+       
             return view('pacientes.show',compact('paciente')); 
 }
 }

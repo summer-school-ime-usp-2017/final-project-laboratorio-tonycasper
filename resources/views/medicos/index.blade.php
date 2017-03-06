@@ -27,8 +27,8 @@
                   <tr>
                     <th>Id</th>
                     <th>Nome</th>
-                    <th>Metodo</th>
-                    <th>#</th>
+                    <th>CRM</th>
+                    <th>E-mail</th>
                   </tr>
               </thead>
               <tbody>
@@ -41,8 +41,12 @@
                     {{$medico->nome}}
                   </td>
                   <td>
-                     {{$medico->metodo}}
+                     {{$medico->crm}}
                   </td>
+                  <td>
+                     {{$medico->email}}
+                  </td>
+                  
                   <td>
 +                    <a href="/medicos/{{ $medico->id }}">Detalhes</a>
 +                 </td>

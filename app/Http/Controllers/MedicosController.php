@@ -14,10 +14,8 @@ class MedicosController extends Controller
       return view('medicos.index', compact('medicos'));
     }
 
-    public function show($index){
-        
-        $medico = $this->medicos[$index];
-
+    public function show(Medicos $medico){
+    
         return view ('medicos.show',compact('medico'));
     }
 }

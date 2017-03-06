@@ -22,7 +22,7 @@ Route::get('/exames/{exame}','ExamesController@show');
 Route::get('/exames','ExamesController@index');
 
 //rota para medicos/1
-Route::get('/medicos/{medico}','MedicosController@index');
+Route::get('/medicos/{medico}','MedicosController@show');
 
 // rota para medicos
 Route::get('/medicos','MedicosController@index');
@@ -31,10 +31,10 @@ Route::get('/medicos','MedicosController@index');
 Route::get('/pedidos','PedidosController@index');
 
 //rota para pedidos/1
-Route::get('/pedidos/{pedido}','PedidosController@index');
+Route::get('/pedidos/{pedido}','PedidosController@show');
 
 // rota para pedidos
 Route::get('/pacientes','PacientesController@index');
 
 //rota para pedidos/1
-Route::get('/pacientes/{paciente}','PacientesController@index');
+Route::get('/pacientes/{paciente}','PacientesController@show');
