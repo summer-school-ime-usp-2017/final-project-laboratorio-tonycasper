@@ -3,22 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Pedidos;
 
 class PedidosController extends Controller
 {
-    
-        private $pedidos = array(
-            'um pedido','doies','mais um = 3'
-        );
         
         public function index()
         {
-            $pedidos = $this->pedidos;
+            $pedidos = pedidos::all();
+
             return view('pedidos.index',compact('pedidos'));
         }
 
-        public function show($index){
-            $pedido = $this->pedidos[$index];
+        public function show(Pedidos $pedido){
             return view('pedidos.show',compact('pedido'));
         }
 }

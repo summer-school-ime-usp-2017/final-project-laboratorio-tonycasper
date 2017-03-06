@@ -21,6 +21,12 @@ Route::get('/exames/{exame}','ExamesController@show');
 //rota para o exame
 Route::get('/exames','ExamesController@index');
 
+//rota para a pagina  de criar
+Route::get('/exames/cria','ExamesController@cria');
+
+//rota para criar um exame
+Route::post('/exames', 'EditoraController@armazena');
+
 //rota para medicos/1
 Route::get('/medicos/{medico}','MedicosController@show');
 
