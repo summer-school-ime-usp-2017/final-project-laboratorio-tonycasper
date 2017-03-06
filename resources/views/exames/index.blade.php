@@ -44,8 +44,8 @@
                      {{$exame->metodo}}
                   </td>
                   <td>
-+                    <a href="/exames/{{ $exame->id }}">Detalhes</a>
-+                 </td>
+                    <a href="/exames/{{ $exame->id }}">Detalhes</a>
+                 </td>
               </tr>
               @endforeach
             </tbody>
@@ -57,7 +57,13 @@
 
       </div>
       <a href="/">Voltar o inicio</a>
-    </div>
+      
+    <a href="/exames/cria" style = "float:right;">
+        <strong> <span class="glyphicon glyphicon-th-plus"> Criar</span></strong>
+     </a>
+
+       </div>
+            
 
     <script type="text/javascript" src="/js/app.js" >
   </body>

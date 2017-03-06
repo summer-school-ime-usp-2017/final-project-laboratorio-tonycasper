@@ -13,6 +13,8 @@
         <h1>Detalhes do Exame</h1>
       </div>
 
+          
+      
       <div class="row">
         <div class="col-md-6">
           <div class="panel panel-primary">
@@ -48,6 +50,7 @@
           </div>
         </div>
        <a href="/">Voltar o inicio</a>
+       <a href="/exames" style = "float:right;">Exibir todas</a>
     <script type="text/javascript" src="/js/app.js" >
   </body>
 </html>

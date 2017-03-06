@@ -13,7 +13,7 @@
           <h3 class="panel-title">Exame</h3>
         </div>
         <div class="panel-body">
-          <a href="/examess">
+          <a href="/exames">
             <span class="glyphicon glyphicon-th-list"> exames</span>
           </a>
         </div>
